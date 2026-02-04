@@ -1,5 +1,5 @@
 // App.jsx: 화면 전체 레이아웃(헤더/메인/푸터)을 한 번에 구성하는 파일
-import "./app.css";
+import "./App.css";
 
 export default function App() {
   return (
