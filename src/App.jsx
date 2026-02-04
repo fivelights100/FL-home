@@ -1,4 +1,4 @@
-import "./APP.css";
+import "./App.css";
 import logo from "./assets/fl-logo.png";
 
 export default function App() {
