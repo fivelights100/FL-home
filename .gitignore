@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# large installer files should not go to GitHub
+public/downloads/*
