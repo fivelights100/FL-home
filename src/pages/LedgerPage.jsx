@@ -46,7 +46,7 @@ export default function LedgerPage() {
 
             {/* 다운로드 버튼 */}
             <div style={{ marginTop: 14 }}>
-              <a className="btn primary" href="/downloads/FL_AccountBook_v1.0.0 Setup.exe" download>
+              <a className="btn primary" href="https://s3.ap-northeast-2.amazonaws.com/fl-lab-downloads-1.0.0/FL_AccountBook_v1.0.0_Setup.exe" download>
                 FL 가계부 다운로드
               </a>
             </div>
