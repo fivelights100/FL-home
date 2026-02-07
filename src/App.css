@@ -446,6 +446,78 @@ a{ color:inherit; text-decoration:none; }
   .menu{ display:none; } /* 모바일에서는 메뉴 숨김(원하면 햄버거로 바꿔줄 수 있음) */
 }
 
+/* ===== LedgerPage: 업데이트 영역(소개 아래) ===== */
+.update{
+  margin-top: 4px;
+  padding-top: 6px;
+}
+
+.update-head{
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
+.update-title{
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.update-sub{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.update-list{
+  margin-top: 12px;
+  display:grid;
+  gap: 12px;
+}
+
+.update-item{
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+}
+
+.update-meta{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.update-version{
+  font-weight: 900;
+  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+.update-date{
+  font-size: 12px;
+  color: rgba(234,240,255,0.70);
+}
+
+.update-bullets{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: rgba(234,240,255,0.86);
+}
+
+.update-bullets li{
+  margin: 6px 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 /* ===== 애니메이션 ===== */
 @keyframes floatGlow{
   0%   { transform: translate3d(0,0,0) scale(1); }
