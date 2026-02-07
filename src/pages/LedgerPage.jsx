@@ -16,13 +16,17 @@ export default function LedgerPage() {
   const updates = [
     {
       date: "2026-02-07",
-      version: "v1.0.0",
-      items: ["초기 릴리즈", "수입/지출 기록", "내보내기/백업 지원"],
+      version: "v1.0.1",
+      items: ["사용되지 않는 조회 버튼 제거", 
+              "날짜 정렬과 금액 정렬 통합", 
+              "기준일 재정렬(월~일 → 일~토)", 
+              "각각의 조회 단위일 때 필요없는 UI 숨기게 변경"
+             ],
     },
     {
-      date: "2026-02-01",
-      version: "v0.9.0",
-      items: ["UI/UX 개선", "입력 폼 안정화"],
+      date: "2026-02-05",
+      version: "v1.0.0",
+      items: ["LTS 정식 출시"],
     },
   ];
 
