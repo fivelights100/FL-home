@@ -15,7 +15,7 @@ export default function LedgerPage() {
       pc: {
         label: "Windows 버전",
         description: "Windows 환경에서 설치해서 사용하는 데스크톱 버전",
-        downloadText: "FL 가계부 Windows 1.0.0 다운로드",
+        downloadText: "Windows 1.0.0 다운로드",
         downloadHref:
           "https://s3.ap-northeast-2.amazonaws.com/fl-lab-downloads-1.0.0/FL_AccountBook_v1.0.0_Setup.exe",
         features: [
@@ -60,7 +60,7 @@ export default function LedgerPage() {
       android: {
         label: "Android 버전",
         description: "안드로이드에서 사용할 수 있는 모바일 버전",
-        downloadText: "FL 가계부 Android 1.0.0b1 다운로드",
+        downloadText: "Android 1.0.0b1 다운로드",
         downloadHref: "https://s3.ap-northeast-2.amazonaws.com/fl-accountbook-android-1.0.0b1-20260212-app-download/FL_AccountBook_1.0.0b1.apk",
         features: [
           { title: "모바일 최적화", desc: "폰에서 한 손으로도 빠르게 기록할 수 있음" },
