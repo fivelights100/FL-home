@@ -1,8 +1,13 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/fl-logo.png";
+import { useAuth } from "../auth/AuthContext.jsx";
 
 export default function LedgerPage() {
+  // 로그인 상태
+  // - Ledger는 ProtectedRoute로 보호되고 있지만, UX를 위해 상단에 계정/로그아웃 버튼을 둔다.
+  const { attributes, signOut } = useAuth();
+
   // [PC/Android 선택 상태]
   const [mode, setMode] = useState("pc");
 
@@ -104,7 +109,15 @@ export default function LedgerPage() {
         <div className="ledger-top-inner">
           <img src={logo} alt="FL Lab" className="brand-logo" />
           <div className="ledger-title">FL 가계부</div>
-          <Link to="/" className="btn ghost">홈으로</Link>
+          <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+            <span className="pill" title="로그인됨">
+              {attributes?.email ?? "Signed in"}
+            </span>
+            <button className="btn ghost" type="button" onClick={signOut}>
+              로그아웃
+            </button>
+            <Link to="/" className="btn ghost">홈으로</Link>
+          </div>
         </div>
       </header>
 

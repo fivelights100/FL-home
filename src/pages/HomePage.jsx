@@ -4,10 +4,52 @@
 
 import { Link } from "react-router-dom";
 import logo from "../assets/fl-logo.png";
+import { useAuth } from "../auth/AuthContext.jsx";
 
 export default function HomePage() {
+  // 로그인 상태
+  // - topbar에서 로그인/로그아웃 버튼을 노출하기 위해 사용한다.
+  const { user, attributes, signOut } = useAuth();
+
   return (
     <div className="page">
+      {/* ===== 상단 Topbar (Glass) ===== */}
+      <header className="topbar">
+        <div className="topbar-inner">
+          <div className="brand">
+            <img className="brand-logo" src={logo} alt="FL Lab Logo" />
+            <div className="brand-text">
+              <div className="brand-title">FL Lab</div>
+              <div className="brand-tag">Neon / Glass UI</div>
+            </div>
+          </div>
+
+          <nav className="menu">
+            <Link to="/">Home</Link>
+            <Link to="/ledger">Ledger</Link>
+            <Link to="/login">Login</Link>
+          </nav>
+
+          {/* 로그인 버튼 영역 */}
+          <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+            {user ? (
+              <>
+                <span className="pill" title="로그인됨">
+                  {attributes?.email ?? "Signed in"}
+                </span>
+                <button className="btn ghost" type="button" onClick={signOut}>
+                  로그아웃
+                </button>
+              </>
+            ) : (
+              <Link className="btn primary" to="/login">
+                로그인
+              </Link>
+            )}
+          </div>
+        </div>
+      </header>
+
       {/* ===== 히어로(상단 메인 비주얼) ===== */}
       <section className="hero">
         <div className="hero-bg" />
