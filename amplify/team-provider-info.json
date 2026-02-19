@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-flweb-dev-d7992-authRole",
+      "UnauthRoleArn": "arn:aws:iam::222557381049:role/amplify-flweb-dev-d7992-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::222557381049:role/amplify-flweb-dev-d7992-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-flweb-dev-d7992-deployment",
+      "UnauthRoleName": "amplify-flweb-dev-d7992-unauthRole",
+      "StackName": "amplify-flweb-dev-d7992",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:222557381049:stack/amplify-flweb-dev-d7992/c655e6c0-0c88-11f1-a329-0267c1ca105d",
+      "AmplifyAppId": "du02twtb0nf5m"
+    },
+    "categories": {
+      "auth": {
+        "flweb5e5e5205": {}
+      }
+    }
+  }
+}
